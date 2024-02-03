@@ -1,15 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
-
-
-pip install google-generativeai
-
-
-# In[ ]:
-
-
 from flask import Flask,request,render_template
 import google.generativeai as palm
 app = Flask(__name__)
@@ -29,9 +20,6 @@ def index():
         return(render_template("index.html",r="waiting for question....."))
 if __name__ == "__main__":
     app.run()
-
-
-# In[ ]:
 
 
 
